@@ -1,16 +1,15 @@
-﻿using System;
-using Xamarin.Forms.Platform.iOS;
-using Foundation;
+﻿using Foundation;
+using KeyboardOverlap.Forms.Plugin.iOSUnified;
+using System;
+using System.Diagnostics;
 using UIKit;
 using Xamarin.Forms;
-using CoreGraphics;
-using KeyboardOverlap.Forms.Plugin.iOSUnified;
-using System.Diagnostics;
+using Xamarin.Forms.Platform.iOS;
 
-[assembly: ExportRenderer (typeof(Page), typeof(KeyboardOverlapRenderer))]
+[assembly: ExportRenderer(typeof(Page), typeof(KeyboardOverlapRenderer))]
 namespace KeyboardOverlap.Forms.Plugin.iOSUnified
 {
-	[Preserve (AllMembers = true)]
+    [Preserve (AllMembers = true)]
 	public class KeyboardOverlapRenderer : PageRenderer
 	{
 		NSObject _keyboardShowObserver;
